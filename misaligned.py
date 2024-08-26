@@ -1,13 +1,13 @@
 def create_color_map():
     primary_colors = ["White", "Red", "Black", "Yellow", "Violet"]
     secondary_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
-    
+
     color_map = [
         (index, primary, secondary)
         for index, primary in enumerate(primary_colors, start=1)
         for secondary in secondary_colors
     ]
-    
+
     return color_map
 
 def display_color_map(color_map):
